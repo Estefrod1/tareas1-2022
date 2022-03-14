@@ -1,0 +1,16 @@
+package com.mycompany.assignment10;
+import items;
+import consumables;
+
+public class Life{
+    @Override
+    public void oportunity(){
+        super.effect();
+        System.out.println("you recover life, 20 HP");
+    }
+    @Override
+    public void morelife(){
+        super.use();
+        System.out.println("you got more life, 10 HP");
+    }
+}
