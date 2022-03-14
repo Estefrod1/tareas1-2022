@@ -1,13 +1,14 @@
 package com.mycompany.assignment10;
+import
 
 public class Mana{
     @Override
     public void Power(consumableitem useit){
-        super.use(attackCharacter);
+        super.use(useit);
         System.out.println("the item gave you an attack and the player lose 10 HP");
     }
     @Override
-    public void healing(consumableitem useit, int damage){
-        System.out.println("you use healing, 10 HP")
+    public void healing(consumableitem useit){
+        System.out.println("you use healing, 3 HP")
     }
 }
