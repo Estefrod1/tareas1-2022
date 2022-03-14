@@ -1,0 +1,14 @@
+package com.mycompany.assignment10;
+
+public class Trap{
+    @Override
+    public void slowness(){
+        super.effect();
+        System.out.println("the item trap make you go slowness");
+    }
+    @Override
+    public void loselife(consumableitem useit, int damage){
+        super.use(useit, damage);
+        System.out.println("Player lose 10 HP");
+    }
+}
