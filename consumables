@@ -1,0 +1,23 @@
+
+package com.mycompany.assignment10;
+import java.util.ArrayList;
+/**
+ *
+ * @author estefania
+ */
+public class consumableitem {
+
+    public static void main(String[] args) {
+        var items = new ArrayList<ElixirBottle>();
+        var trap = new Trap();
+        var life  = new Life();
+        var mana = new Mana();
+        items.add(trap);
+        items.add(life);
+        items.add(mana);
+        for (var elixirbottle : items){
+            elixirbottle.use();
+            elixirbottle.effect();
+        }
+    }
+}
