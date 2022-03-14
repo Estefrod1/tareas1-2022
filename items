@@ -1,0 +1,17 @@
+public class items{
+    public static void main(String[] args) {
+        gun gun9mm = new mana();
+        gun9mm.use();
+        gun9mm.attack();
+
+        sniper sniperr = new trap();
+        sniperr.use();
+        sniperr.effect();
+        
+        shotgun gunn = new life();
+        gunn.use();
+        gunn.morelife();
+
+    }
+
+}
