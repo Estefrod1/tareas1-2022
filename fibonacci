@@ -1,0 +1,14 @@
+public class Main {
+    public int getResult() {
+    return num;
+    }
+    public static void main(String[] args) {
+        String[] Fibonacci = new Fibonacci[15];
+        
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Fibonacci a = new Fibonacci(15);
+        System.out.println(a.getResult());
+    }
+}
