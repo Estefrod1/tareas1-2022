@@ -1,16 +1,16 @@
 public class items{
     public static void main(String[] args) {
-        gun gun9mm = new mana();
-        gun9mm.use();
-        gun9mm.attack();
+        mana= new mana();
+        mana.use();
+        mana.effect();
 
-        sniper sniperr = new trap();
-        sniperr.use();
-        sniperr.effect();
+        trap Trap = new trap();
+        trap.use();
+        trap.effect();
         
-        shotgun gunn = new life();
-        gunn.use();
-        gunn.morelife();
+        life Life= new life();
+        life.use();
+        life.morelife();
 
     }
 
