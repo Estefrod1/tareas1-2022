@@ -2,30 +2,31 @@ package suma;
 
 
 public class Empleado {
-    int a, c, d, Sueldo2;
+    double a, c, d, Sueldo2;
     int b = 500;
-    public void Sueldo1(int Sueldo1) {
+    int[] Employee = new int[0];
+    public void Employee(String nombre, int Sueldo1) {
         this.Sueldo1 = Sueldo1;
+        this.nombre = nombre;
     }
     public void afp(int Sueldo1) {
         a = Sueldo1 * 0.13;
-        return a;
+        this.a = a;
     }
     public void healthInsurance(int b) {
         this.b = b;
-        return b;
     }
     public void quinqueio(int Sueldo1) {
         c = Sueldo1 / 12;
-        return c;
+        this.c = c;
     }
     public void bonus(int Sueldo1) {
         d = Sueldo1 / 12;
-        return d;
+        this.d = d;
     }
     public void totalSalary(int Sueldo1) {
         Sueldo2 = Sueldo1 - a - b - c - d;
-        return Sueldo2;
+        this.Sueldo2 = Sueldo2;
     }
     public static void main(String[] args) {
         Employee Empl1 = new Employee("Juan Perez", 5000);
