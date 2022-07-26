@@ -41,23 +41,26 @@ public class App {
             }
         }
         if (y>x) {
-            for (int i = 0; i < d; i++) {
-                z = x-y;
-                if (z < 4) {
-                    while (x>1) {
-                        b = b + "xx";
-                        x -= 2;
-                        while (y>0) {
-                            b=b + "y";
-                            y--;
-                        }
+            c = x-y;
+            if (c < 4) {
+                while (y == 1) {
+                    b = b + "y";
+                    while (x>0) {
+                        b=b + "x";
+                        x--;
                     }
+                    y--;
                 }
-                while(x==1) {
-                    b = b + "x";
+                while (y>1) {
+                    b = b + "yy";
+                    while (x>0) {
+                        b=b + "x";
+                        x--;
+                    }
+                    y -= 2;
                 }
             }
-            if (z > 4) {
+            if (c > 4) {
                 System.out.println("imposible combinacion");
             }
         }
